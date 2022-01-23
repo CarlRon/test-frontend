@@ -8,11 +8,9 @@
 body {
 	font-family: 'Roboto', sans-serif;
 }
-.wrapper,
-.portfolio {
+.wrapper {
 	width: 100vw;
 	height: 100vh;
-	/* background-color: #121527; */
 	background-color: #282729;
 	color: #fff;
 }
@@ -65,7 +63,8 @@ body {
 	color: aquamarine;
 }
 .download-cv,
-.project-details {
+.project-details,
+.btn-submit {
 	font-size: 14px;
 	padding: 10px 24px;
 	background-color: aquamarine;
@@ -74,9 +73,11 @@ body {
 	margin-top: 10px;
 	cursor: pointer;
 	box-shadow: 1px 3px 11px -5px rgba(47, 110, 88, 0.69);
+	text-transform: uppercase;
 }
 .download-cv:hover,
-.project-details:hover {
+.project-details:hover,
+.form .btn-submit:hover {
 	background-color: azure;
 	box-shadow: none;
 }
@@ -108,6 +109,11 @@ body {
 	color: #282729;
 	margin: 0;
 }
+.portfolio {
+	width: 100vw;
+	background-color: #282729;
+	color: #fff;
+}
 .portfolio-headings h2 {
 	font-size: 1.5em;
 	color: #fff;
@@ -132,13 +138,15 @@ body {
 	height: 80vh;
 	margin: 0 auto;
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	justify-content: center;
 }
 .card {
 	width: 350px;
-	height: 320px;
-	background-color: cadetblue;
+	height: 300px;
+	color: #fff;
+	background-color: #2e2a31;
+	margin: 1em;
 }
 .card__img {
 	width: 100%;
@@ -177,4 +185,68 @@ body {
 	text-transform: uppercase;
 	text-decoration: none;
 	color: #282729;
+}
+.contact-section {
+	background-color: #282729;
+	color: #fff;
+}
+.contact-container {
+	margin: 0 auto;
+	padding: 3em;
+}
+.contact-headings h2 {
+	margin: 0;
+}
+.contact-container img {
+	height: 700px;
+	width: 750px;
+	margin-bottom: 0px;
+}
+.form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 30vw;
+	margin-top: 1.5em;
+}
+.form input {
+	padding: 10px 20px;
+	margin-bottom: 1em;
+	background: none;
+	border: none;
+	border-bottom: solid #fff;
+	color: #fff;
+}
+input:hover,
+textarea:hover {
+	border-bottom: solid aquamarine;
+	border-right: solid aquamarine;
+	cursor: pointer;
+}
+.form textarea {
+	height: 150px;
+	background: none;
+	color: #fff;
+	border-bottom: solid aquamarine;
+}
+.footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: 200px;
+	background-color: aquamarine;
+}
+.footer-content h2 {
+	font-size: 2.5em;
+}
+.footer-content h5,
+.social-network svg {
+	font-size: 1.3em;
+}
+.social-network {
+	display: flex;
+	justify-content: space-evenly;
+	width: 300px;
 }
